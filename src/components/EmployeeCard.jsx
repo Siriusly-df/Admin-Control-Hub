@@ -19,7 +19,7 @@ const EmployeeCard = ({
 }) => {
   const handleCardClick = () => {
     if (!isActive) {
-      onOpen(id); // відкриваємо тільки якщо не активна
+      onOpen(id); 
     }
   };
 
@@ -60,3 +60,4 @@ const EmployeeCard = ({
 };
 
 export default EmployeeCard;
+
