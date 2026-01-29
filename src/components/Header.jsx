@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom"; // 👈 додаємо
+import { useNavigate } from "react-router-dom"; 
 import "../style.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -8,7 +8,7 @@ const Header = () => {
   const [isClosing, setIsClosing] = useState(false);          
   const [isRegistered, setIsRegistered] = useState(true);
 
-  const navigate = useNavigate(); // 👈 хук для навігації
+  const navigate = useNavigate(); 
 
   const toggleProfilePanel = useCallback(() => {
     if (openUserMenu) {
@@ -27,10 +27,10 @@ const Header = () => {
 
   const panelVisible = openUserMenu || isClosing;
 
-  // 👇 функція виходу
+
   const handleLogout = () => {
-    // тут можна очистити токени/стан користувача
-    navigate("/register"); // переходимо на сторінку реєстрації
+   
+    navigate("/register"); 
   };
 
   return (
@@ -88,3 +88,4 @@ const Header = () => {
 };
 
 export default Header;
+
