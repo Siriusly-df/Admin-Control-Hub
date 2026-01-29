@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Login.css"; // если файл стилей лежит в src/style
+import "../styles/Login.css"; 
 
 const Login = () => {
   const [login, setLogin] = useState("");
@@ -9,7 +9,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Логін:", login);
     console.log("Пароль:", password);
-    // здесь можно добавить логику авторизации
+   
   };
 
   return (
@@ -39,3 +39,4 @@ const Login = () => {
 };
 
 export default Login;
+
