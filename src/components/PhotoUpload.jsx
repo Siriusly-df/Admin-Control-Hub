@@ -16,7 +16,7 @@ const PhotoUpload = () => {
 
   return (
     <div className="photo-upload">
-      {/* аватар */}
+     
       <div
         className="photo-circle"
         style={{
@@ -28,7 +28,7 @@ const PhotoUpload = () => {
         {!avatar && <span>Фото</span>}
       </div>
 
-      {/* кнопка для смены фото */}
+   
       <button
         type="button"
         className="add-photo-btn"
@@ -37,7 +37,7 @@ const PhotoUpload = () => {
         +
       </button>
 
-      {/* скрытый input */}
+      
       <input
         id="avatarInput"
         type="file"
@@ -50,3 +50,4 @@ const PhotoUpload = () => {
 };
 
 export default PhotoUpload;
+
